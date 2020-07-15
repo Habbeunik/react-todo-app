@@ -7,7 +7,7 @@ const InputField = ({ placeholder, value, onChange }) => {
       placeholder={placeholder}
       className={styles.input}
       value={value}
-      onChange={onChange}
+      onChange={(e) => onChange(e.target.value)}
     />
   );
 };

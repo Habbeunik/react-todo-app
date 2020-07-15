@@ -39,11 +39,11 @@ function App() {
     });
   }
 
-  function handleEditChange(e) {
-    e.persist();
+  function handleEditChange(value) {
+    // e.persist();
     setEditState((prevEditState) => ({
       ...prevEditState,
-      value: e.target.value,
+      value: value,
     }));
   }
 
@@ -53,8 +53,8 @@ function App() {
     setInputValue("");
   }
 
-  function handleInputChange(e) {
-    setInputValue(e.target.value);
+  function handleInputChange(value) {
+    setInputValue(value);
   }
 
   return (
